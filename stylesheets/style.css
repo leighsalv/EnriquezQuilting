@@ -6,171 +6,164 @@ body {
   padding: 0;
 }
 
-/* img { */
-  /*fits in that container*/
-  /* width:100%; */
-/* } */
+h1 {
+  font-size: 50px;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+h2 {
+  color: #993735;
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 
 .container {
-  margin:auto;
+  margin: auto;
+}
+
+.back-to-top {
+  /* float: right; */
+  float:right;
+  color:#ffffff;
 }
 
 /* === HEADER ================================ */
-.navBar {
 
-  /* flex-direction:row;
-  flex-wrap:nowrap;
-  padding-left:50%; */
-  flex-wrap:nowrap;
+.mainHeader {
+  background-color: #ffffff;
+  border-bottom: 1px solid #647441;
+  padding-top: 1%;
+  position: fixed;
+  width: 100%;
+}
+
+.navBar {
+  flex-wrap: nowrap;
   text-transform: uppercase;
 }
 
 .navBar a {
-  color:#993735;
-  /*removes underline on links*/
-  text-decoration:none;
+  color: #993735;
+  text-decoration: none; /*removes underline*/
 }
 
 .navBar li {
-  /*navbar links are in one row, removes bullet points*/
-  display:inline;
-  /* text-align: right; */
+  display: inline; /*navbar links are in one row, removes bullet points*/
   padding-right: 20px;
 }
 
 .navBar .current a, .navBar a:hover {
-  color:#647441;
+  color: #647441;
   text-decoration:none;
-}
-
-.mainHeader {
-  background-color:#ffffff;
-  border-bottom: 1px solid #647441;
-  padding-top: 1%;
-  position:fixed;
-  width:100%;
 }
 
 /* === INTRODUCTION ================================ */
 
 .introSection {
-  background-image:url("../images/absbg.jpg");
+  background-image: url("../images/sample.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom:1px;
-  margin-bottom:30px;
+  border-bottom: 1px;
+  margin-bottom: 30px;
 }
 
 .introSection .row {
-  height:750px;
+  height: 750px;
 }
 
-.introSection h1 {
-  font-size: 50px;
-  margin:0;
-  padding-bottom:40px;
-}
-
-.introSection p{
-  font-size: 20px;
-  margin:0;
+.introSection p {
+  font-size: 25px;
+  margin: 0;
 }
 
 /* === ABOUT SECTION ================================ */
 
-.aboutEMQ{
-  text-align:justify;
+.aboutEMQ {
+  text-align: justify;
 }
 
 .aboutSection .row {
-  height:450px;
+  height: 450px;
+  /* padding-top:20px;
+  padding-bottom:20px; */
 }
 
-.aboutSection h1{
-  color: #993735;
-  font-size:30px;
-  padding-bottom:10px;
-  padding-top:10px;
+.aboutSection li {
+  list-style-type: none; /*removes bullet points*/
 }
 
-.aboutSection li{
-  /*removes bullet points*/
-  list-style-type:none;
+.aboutPic {
+  padding-top: 100px;
 }
 
-.aboutPic{
-  padding-top:100px;
-}
-
-/*
-.aboutEMQ {
-  background-color:#F5F5DC;
-  background-size: cover;
-} */
 /* === SERVICES SECTION ================================ */
 
 .servicesSection {
-  background-color:#eeeeee;
+  background-color: #f4f4f4;
 }
 
-.servicesSection h1{
-  color: #993735;
-  font-size:30px;
-  padding-bottom:10px;
-  padding-top:10px;
-}
-
-.servicesSection .row{
-  /* text-align: right; */
-  padding-bottom:30px;
-  padding-top:20px;
+.servicesSection .row {
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .servicesSection .moreButton {
-  background-color:#647441;
-  color:#ffffff;
-  cursor:pointer;
+  background-color: #647441;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
   padding: 15px 25px;
-  text-align:center;
-  text-transform:uppercase;
-  font-size:16px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .servicesSection .moreButton:hover {
-  background-color:#000000;
-  cursor:pointer;
-  font-size:16px;
-  padding: 15px 25px;
-  text-align:center;
-  text-transform:uppercase;
-  transition-duration:0.5s;
+  background-color: #000000;
+  transition-duration: 0.5s;
 }
-
-/* .firstService {
-  background-color: #F5F5DC;
-}
-
-.secondService {
-  background-color:#993735;
-}
-
-.thirdService {
-  background-color:#647441;
-} */
 
 /* === CONTACT US SECTION ================================ */
 
+.contactSection .row{
+  padding-bottom: 200px;
+  padding-top: 50px;
+}
+
+.contactSection .contactUs {
+  text-align:center;
+}
+
+.contactUs a {
+  color: black;
+  text-decoration:none;
+}
+
 /* === FOOTER ================================ */
 
+.mainFooter {
+  background-color: #647441;
+  color:#ffffff;
+}
+
 /* === MEDIA QUERIES ================================ */
+
 /* if width is less than 800px, it resizes it to the conditions below */
+
 @media(max-width:800px) {
   .introSection h1 {
-    font-size:30px;
+    font-size: 30px;
   }
-  .introSection .row{
-    height:450px;
-    padding-top:100px;
+  .introSection .row {
+    height: 450px;
+    padding-top: 100px;
+  }
+  .aboutSection .aboutPic {
+    padding-top:10px;
+  }
+  .servicesSection {
+    padding-top:150px;
   }
 }
