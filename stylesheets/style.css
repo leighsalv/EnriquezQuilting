@@ -24,9 +24,11 @@ h2 {
 }
 
 .back-to-top {
-  /* float: right; */
-  float:right;
+  bottom:10px;
   color:#ffffff;
+  /* position:fixed; */
+  position:relative;
+  right:15px;
 }
 
 /* === HEADER ================================ */
@@ -62,6 +64,7 @@ h2 {
 /* === INTRODUCTION ================================ */
 
 .introSection {
+  background-attachment:fixed; /*makes background stay when scrolling*/
   background-image: url("../images/sample.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -144,8 +147,14 @@ h2 {
 /* === FOOTER ================================ */
 
 .mainFooter {
-  background-color: #647441;
-  color:#ffffff;
+  /* background-color: #647441;
+  color:#ffffff; */
+  background-attachment:fixed; /*makes background stay when scrolling*/
+  background-image: url("../images/sample.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#FFFFFF;
 }
 
 /* === MEDIA QUERIES ================================ */
