@@ -24,11 +24,11 @@ h2 {
 }
 
 .back-to-top {
-  bottom:10px;
-  color:#ffffff;
+  bottom: 10px;
+  color: #ffffff;
   /* position:fixed; */
-  position:relative;
-  right:15px;
+  position: relative;
+  right: 15px;
 }
 
 /* === HEADER ================================ */
@@ -48,24 +48,27 @@ h2 {
 
 .navBar a {
   color: #993735;
-  text-decoration: none; /*removes underline*/
+  text-decoration: none;
+  /*removes underline*/
 }
 
 .navBar li {
-  display: inline; /*navbar links are in one row, removes bullet points*/
+  display: inline;
+  /*navbar links are in one row, removes bullet points*/
   padding-right: 20px;
 }
 
 .navBar .current a, .navBar a:hover {
   color: #647441;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /* === INTRODUCTION ================================ */
 
 .introSection {
-  background-attachment:fixed; /*makes background stay when scrolling*/
-  background-image: url("../images/bg.jpg");
+  background-attachment: fixed;
+  /*makes background stay when scrolling*/
+  background-image: url("../images/qu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,18 +88,19 @@ h2 {
 /* === ABOUT SECTION ================================ */
 
 .aboutEMQ {
-  padding-top:20px;
-  padding-left:30px;
-  padding-right:30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom:30px;
   text-align: justify;
 }
 
 .aboutSection .row {
-  height: 450px;
+  height: 400px;
 }
 
 .aboutSection li {
-  list-style-type: none; /*removes bullet points*/
+  list-style-type: none;
+  /*removes bullet points*/
 }
 
 .aboutPic {
@@ -105,121 +109,116 @@ h2 {
 
 .aboutSection .learnMoreButton {
   background-color: #647441;
-  border-color:#647441;
+  border-color: #647441;
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
   padding: 15px 25px;
-  /* position:relative; */
-  top:20px;
-
+  top: 20px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .aboutSection .learnMoreButton:hover {
   background-color: #ffffff;
-  border-color:#647441;
-  color:#647441;
+  border-color: #647441;
+  color: #647441;
   transition-duration: 0.2s;
 }
 
 /* === COMMITTED SECTION ================================ */
 
 .committedSection {
-  padding-bottom:30px;
+  /* background-image: linear-gradient(#FFFFFF, #F5F5DC, #eeeeee); */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
 .fa-clipboard-check, .fa-handshake, .fa-truck, .fa-users {
-  color:#993735;
-  font-size:70px;
-  padding-top:20px;
-  padding-bottom:10px;
+  color: #993735;
+  font-size: 70px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 .fa-clipboard-check:hover, .fa-handshake:hover, .fa-truck:hover, .fa-users:hover {
-  color:#c5c79f;
+  animation-direction: reverse;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 3s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 100%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
 
 /* === OUR SERVICES SECTION ================================ */
 
 .servicesSection {
   background-color: #eeeeee;
+  height: 620px;
+  padding-top: 50px;
 }
 
-.servicesSection .row {
-  padding-top: 40px;
-  /* height:400px; */
+.servicesSection .innerRow {
+  padding-bottom: 350px;
 }
 
 .servicesSection .moreButton {
   background-color: #647441;
-  border-color:#647441;
+  border-color: #647441;
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
   padding: 15px 25px;
-  position:relative;
-  bottom:100px;
+  bottom: 100px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .servicesSection .moreButton:hover {
   background-color: #ffffff;
-  border-color:#647441;
-  color:#647441;
+  border-color: #647441;
+  color: #647441;
   transition-duration: 0.2s;
 }
 
 .firstService {
-  padding-left:50px;
-  padding-bottom:20%;
-  position:relative;
+  padding-left: 50px;
+  position: relative;
 }
 
-.fa-cut{
-  color:#993735; /*red*/
-  font-size:70px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
+.secondService {}
 
-.secondService {
-  padding-bottom:20%;
-
-}
-
-.thirdService {
-  padding-bottom:20%;
-}
+.thirdService {}
 
 /* === CONTACT US SECTION ================================ */
 
-.contactSection .row{
+.contactSection .row {
   padding-bottom: 50px;
   padding-top: 50px;
 }
 
 .contactSection .contactUs {
-  text-align:center;
+  text-align: center;
 }
 
 .contactUs a {
   color: black;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /* === FOOTER ================================ */
 
 .mainFooter {
-  /* background-color: #647441;
-  color:#ffffff; */
-  background-attachment:fixed; /*makes background stay when scrolling*/
-  background-image: url("../images/absbg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color:#000000;
+  background-image:linear-gradient(#788b4e,#647441);
+  color: #ffffff;
 }
 
 /* === MEDIA QUERIES ================================ */
@@ -235,9 +234,9 @@ h2 {
     padding-top: 100px;
   }
   .aboutSection .aboutPic {
-    padding-top:10px;
+    padding-top: 10px;
   }
   .servicesSection {
-    padding-top:150px;
+    padding-top: 150px;
   }
 }
