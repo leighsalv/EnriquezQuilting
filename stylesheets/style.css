@@ -65,7 +65,7 @@ h2 {
 
 .introSection {
   background-attachment:fixed; /*makes background stay when scrolling*/
-  background-image: url("../images/sample.png");
+  background-image: url("../images/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,13 +85,14 @@ h2 {
 /* === ABOUT SECTION ================================ */
 
 .aboutEMQ {
+  padding-top:20px;
+  padding-left:30px;
+  padding-right:30px;
   text-align: justify;
 }
 
 .aboutSection .row {
   height: 450px;
-  /* padding-top:20px;
-  padding-bottom:20px; */
 }
 
 .aboutSection li {
@@ -99,39 +100,103 @@ h2 {
 }
 
 .aboutPic {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
-/* === SERVICES SECTION ================================ */
-
-.servicesSection {
-  background-color: #f4f4f4;
-}
-
-.servicesSection .row {
-  padding-bottom: 30px;
-  padding-top: 20px;
-}
-
-.servicesSection .moreButton {
+.aboutSection .learnMoreButton {
   background-color: #647441;
+  border-color:#647441;
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
   padding: 15px 25px;
+  /* position:relative; */
+  top:20px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aboutSection .learnMoreButton:hover {
+  background-color: #ffffff;
+  border-color:#647441;
+  color:#647441;
+  transition-duration: 0.2s;
+}
+
+/* === COMMITTED SECTION ================================ */
+
+.committedSection {
+  padding-bottom:30px;
+}
+.fa-clipboard-check, .fa-handshake, .fa-truck, .fa-users {
+  color:#993735;
+  font-size:70px;
+  padding-top:20px;
+  padding-bottom:10px;
+}
+
+.fa-clipboard-check:hover, .fa-handshake:hover, .fa-truck:hover, .fa-users:hover {
+  color:#c5c79f;
+}
+
+/* === OUR SERVICES SECTION ================================ */
+
+.servicesSection {
+  background-color: #eeeeee;
+}
+
+.servicesSection .row {
+  padding-top: 40px;
+  /* height:400px; */
+}
+
+.servicesSection .moreButton {
+  background-color: #647441;
+  border-color:#647441;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px 25px;
+  position:relative;
+  bottom:100px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .servicesSection .moreButton:hover {
-  background-color: #000000;
-  transition-duration: 0.5s;
+  background-color: #ffffff;
+  border-color:#647441;
+  color:#647441;
+  transition-duration: 0.2s;
+}
+
+.firstService {
+  padding-left:50px;
+  padding-bottom:20%;
+  position:relative;
+}
+
+.fa-cut{
+  color:#993735; /*red*/
+  font-size:70px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.secondService {
+  padding-bottom:20%;
+
+}
+
+.thirdService {
+  padding-bottom:20%;
 }
 
 /* === CONTACT US SECTION ================================ */
 
 .contactSection .row{
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   padding-top: 50px;
 }
 
@@ -150,11 +215,11 @@ h2 {
   /* background-color: #647441;
   color:#ffffff; */
   background-attachment:fixed; /*makes background stay when scrolling*/
-  background-image: url("../images/sample.png");
+  background-image: url("../images/absbg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color:#FFFFFF;
+  color:#000000;
 }
 
 /* === MEDIA QUERIES ================================ */
