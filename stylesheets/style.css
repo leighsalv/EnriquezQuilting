@@ -1,5 +1,6 @@
 body {
-  font-family: "Helvetica", Helvetica;
+  color:#000000;
+  font-family: sans-serif;
   font-size: 15px;
   line-height: 1.7em;
   margin: 0;
@@ -7,7 +8,7 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
   margin: 0;
   padding-bottom: 50px;
 }
@@ -36,7 +37,7 @@ h2 {
 .mainHeader {
   background-color: #ffffff;
   border-bottom: 1px solid #647441;
-  padding-top: 1%;
+  padding: 5px;
   position: fixed;
   width: 100%;
 }
@@ -47,19 +48,20 @@ h2 {
 }
 
 .navBar a {
-  color: #993735;
+  color: #647441;
+  padding: 15px;
   text-decoration: none;
   /*removes underline*/
 }
 
 .navBar li {
-  display: inline;
-  /*navbar links are in one row, removes bullet points*/
+  display: inline; /*navbar links are in one row, removes bullet points*/
   padding-right: 20px;
 }
 
 .navBar .current a, .navBar a:hover {
-  color: #647441;
+  background-color: #647441;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -68,7 +70,7 @@ h2 {
 .introSection {
   background-attachment: fixed;
   /*makes background stay when scrolling*/
-  background-image: url("../images/qu.jpg");
+  background-image: url("../images/introPic.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +79,7 @@ h2 {
 }
 
 .introSection .row {
-  height: 750px;
+  height: 550px;
 }
 
 .introSection p {
@@ -105,6 +107,12 @@ h2 {
 
 .aboutPic {
   padding-top: 40px;
+}
+
+.aboutSection .horizontalLine {
+  background-color: #993735;
+  padding: 3px;
+  width: 20%;
 }
 
 .aboutSection .learnMoreButton {
@@ -197,6 +205,17 @@ h2 {
 .secondService {}
 
 .thirdService {}
+
+/* === COMPANIES SERVED SECTION ================================ */
+.companiesSection img {
+  display: inline-block;
+  margin: 10px 10px;
+
+}
+
+.companiesSection img:hover {
+  opacity: 0.4;
+}
 
 /* === CONTACT US SECTION ================================ */
 
