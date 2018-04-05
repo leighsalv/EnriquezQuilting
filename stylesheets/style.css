@@ -1,5 +1,16 @@
+/*
+Color Palette
+  Green: #647441
+  Red: #993735
+*/
+
+@font-face {
+    font-family: "SackersGothicsStd";
+    src: url("../fonts/sackersgothicstd-light.otf?#iefix") format("opentype");
+}
+
 body {
-  color:#000000;
+  color: #000000;
   font-family: sans-serif;
   font-size: 15px;
   line-height: 1.7em;
@@ -7,17 +18,12 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-size: 30px;
-  margin: 0;
-  padding-bottom: 50px;
-}
-
 h2 {
-  color: #993735;
-  font-size: 30px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  color: #647441;
+  font-family:"SackersGothicsStd";
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom:10px;
 }
 
 .container {
@@ -37,7 +43,8 @@ h2 {
 .mainHeader {
   background-color: #ffffff;
   border-bottom: 1px solid #647441;
-  padding: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   position: fixed;
   width: 100%;
 }
@@ -68,9 +75,8 @@ h2 {
 /* === INTRODUCTION ================================ */
 
 .introSection {
-  background-attachment: fixed;
-  /*makes background stay when scrolling*/
-  background-image: url("../images/introPic.png");
+  background-attachment: fixed; /*makes background stay when scrolling*/
+  background-image: url("../images/homepage/introImg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,41 +85,37 @@ h2 {
 }
 
 .introSection .row {
-  height: 550px;
+  height: 730px;
 }
 
-.introSection p {
-  font-size: 25px;
-  margin: 0;
+.introSection .tagline {
+  color:white;
+  font-family:SackersGothicsStd;
+  font-size:50px;
+  line-height: 40px;
+  margin-top:300px;
+  padding-left:700px;
 }
 
 /* === ABOUT SECTION ================================ */
 
-.aboutEMQ {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom:30px;
-  text-align: justify;
-}
-
 .aboutSection .row {
-  height: 400px;
+  height: 350px;
 }
 
 .aboutSection li {
-  list-style-type: none;
-  /*removes bullet points*/
+  list-style-type: none; /*removes bullet points*/
 }
 
 .aboutPic {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
-.aboutSection .horizontalLine {
+/* .aboutSection .horizontalLine {
   background-color: #993735;
-  padding: 3px;
+  padding-bottom: 3px;
   width: 20%;
-}
+} */
 
 .aboutSection .learnMoreButton {
   background-color: #647441;
@@ -121,8 +123,8 @@ h2 {
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 15px;
   padding: 15px 25px;
-  top: 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -137,24 +139,24 @@ h2 {
 /* === COMMITTED SECTION ================================ */
 
 .committedSection {
+  padding-bottom: 40px;
   /* background-image: linear-gradient(#FFFFFF, #F5F5DC, #eeeeee); */
   padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .fa-clipboard-check, .fa-handshake, .fa-truck, .fa-users {
   color: #993735;
-  font-size: 70px;
-  padding-top: 20px;
+  font-size: 50px;
   padding-bottom: 10px;
+  padding-top: 20px;
   width: 100%;
 }
 
 .fa-clipboard-check:hover, .fa-handshake:hover, .fa-truck:hover, .fa-users:hover {
-  animation-direction: reverse;
   -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
   -webkit-mask-size: 200%;
   animation: shine 3s infinite;
+  animation-direction: reverse;
 }
 
 @-webkit-keyframes shine {
@@ -170,22 +172,22 @@ h2 {
 
 .servicesSection {
   background-color: #eeeeee;
-  height: 620px;
-  padding-top: 50px;
+  height: 650px;
+  /* padding-top: 50px; */
 }
 
-.servicesSection .innerRow {
-  padding-bottom: 350px;
-}
+/* .servicesSection .innerRow {
+  padding-bottom: 200px;
+} */
 
 .servicesSection .moreButton {
   background-color: #647441;
   border-color: #647441;
+  bottom: 100px;
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
   padding: 15px 25px;
-  bottom: 100px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -197,31 +199,37 @@ h2 {
   transition-duration: 0.2s;
 }
 
-.firstService {
-  padding-left: 50px;
-  position: relative;
+/* .firstService {
 }
 
-.secondService {}
+.secondService {
 
-.thirdService {}
+}
+
+.thirdService {
+
+} */
 
 /* === COMPANIES SERVED SECTION ================================ */
+
+.companiesSection {
+  height: 700px;
+}
 .companiesSection img {
   display: inline-block;
-  margin: 10px 10px;
-
+  margin-right: 80px;
+  /* margin: 10px 10px; */
 }
 
 .companiesSection img:hover {
+  color: red;
   opacity: 0.4;
 }
 
 /* === CONTACT US SECTION ================================ */
 
-.contactSection .row {
-  padding-bottom: 50px;
-  padding-top: 50px;
+.contactSection {
+  height: 500px;
 }
 
 .contactSection .contactUs {
@@ -236,8 +244,9 @@ h2 {
 /* === FOOTER ================================ */
 
 .mainFooter {
-  background-image:linear-gradient(#788b4e,#647441);
+  background-image: linear-gradient(#788b4e, #647441);
   color: #ffffff;
+  height: 100px;
 }
 
 /* === MEDIA QUERIES ================================ */
@@ -245,9 +254,6 @@ h2 {
 /* if width is less than 800px, it resizes it to the conditions below */
 
 @media(max-width:800px) {
-  .introSection h1 {
-    font-size: 30px;
-  }
   .introSection .row {
     height: 450px;
     padding-top: 100px;
