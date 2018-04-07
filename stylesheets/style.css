@@ -5,8 +5,14 @@ Color Palette
 */
 
 @font-face {
+  /*wfonts.com*/
     font-family: "SackersGothicsStd";
     src: url("../fonts/sackersgothicstd-light.otf?#iefix") format("opentype");
+}
+
+@font-face {
+  font-family: "MonotypeCorsiva";
+  src: url("../fonts/Monotype Corsiva.ttf?#iefix") format("opentype");
 }
 
 body {
@@ -90,17 +96,19 @@ h2 {
 
 .introSection .tagline {
   color:white;
-  font-family:SackersGothicsStd;
-  font-size:50px;
-  line-height: 40px;
-  margin-top:300px;
-  padding-left:700px;
+  font-family:MonotypeCorsiva;
+  font-size:35px;
+  line-height: 10px;
+  margin-top:450px;
+  padding-left:650px;
 }
 
 /* === ABOUT SECTION ================================ */
 
 .aboutSection .row {
-  height: 350px;
+  height:500px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .aboutSection li {
@@ -108,7 +116,7 @@ h2 {
 }
 
 .aboutPic {
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 /* .aboutSection .horizontalLine {
@@ -139,14 +147,16 @@ h2 {
 /* === COMMITTED SECTION ================================ */
 
 .committedSection {
-  padding-bottom: 40px;
+  background-color: #647441;
+  color: #ffffff;
+  padding-bottom: 50px;
   /* background-image: linear-gradient(#FFFFFF, #F5F5DC, #eeeeee); */
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .fa-clipboard-check, .fa-handshake, .fa-truck, .fa-users {
-  color: #993735;
-  font-size: 50px;
+  color: #ffffff;
+  font-size: 60px;
   padding-bottom: 10px;
   padding-top: 20px;
   width: 100%;
@@ -176,9 +186,34 @@ h2 {
   /* padding-top: 50px; */
 }
 
-/* .servicesSection .innerRow {
-  padding-bottom: 200px;
-} */
+.servicesSection .innerRow {
+  margin: 0;
+  width: 40px; /*makes width of each service smaller*/
+  /* background-color: #000000; */
+}
+
+.servicesSection .firstService{
+  background-color: #FFFFFF;
+  margin-right: 0;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+  width: 20px;
+}
+
+.servicesSection .secondService{
+  background-color: #e8e8e8;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+.servicesSection .thirdService{
+  background-color: #FFFFFF;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
 
 .servicesSection .moreButton {
   background-color: #647441;
@@ -198,17 +233,6 @@ h2 {
   color: #647441;
   transition-duration: 0.2s;
 }
-
-/* .firstService {
-}
-
-.secondService {
-
-}
-
-.thirdService {
-
-} */
 
 /* === COMPANIES SERVED SECTION ================================ */
 
@@ -244,7 +268,7 @@ h2 {
 /* === FOOTER ================================ */
 
 .mainFooter {
-  background-image: linear-gradient(#788b4e, #647441);
+background-image: linear-gradient(#788b4e, #647441);
   color: #ffffff;
   height: 100px;
 }
