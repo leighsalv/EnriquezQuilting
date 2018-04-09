@@ -1,13 +1,14 @@
 /*
 Color Palette
   Green: #647441
-  Red: #993735
+  Red: #691B1E
+  Beige: #EEEDE1
 */
 
 @font-face {
   /*wfonts.com*/
-    font-family: "SackersGothicsStd";
-    src: url("../fonts/sackersgothicstd-light.otf?#iefix") format("opentype");
+  font-family: "SackersGothicsStd";
+  src: url("../fonts/sackersgothicstd-light.otf?#iefix") format("opentype");
 }
 
 @font-face {
@@ -17,7 +18,7 @@ Color Palette
 
 body {
   color: #000000;
-  font-family: sans-serif;
+  font-family: Helvetica;
   font-size: 15px;
   line-height: 1.7em;
   margin: 0;
@@ -26,10 +27,10 @@ body {
 
 h2 {
   color: #647441;
-  font-family:"SackersGothicsStd";
+  font-family: "SackersGothicsStd";
   font-size: 40px;
-  padding-top: 50px;
-  padding-bottom:10px;
+  margin-top: 100px;
+  padding-bottom: 10px;
 }
 
 .container {
@@ -48,7 +49,7 @@ h2 {
 
 .mainHeader {
   background-color: #ffffff;
-  border-bottom: 1px solid #647441;
+  border-bottom: 1px solid #EEEDE1;
   padding-bottom: 10px;
   padding-top: 10px;
   position: fixed;
@@ -68,7 +69,8 @@ h2 {
 }
 
 .navBar li {
-  display: inline; /*navbar links are in one row, removes bullet points*/
+  display: inline;
+  /*navbar links are in one row, removes bullet points*/
   padding-right: 20px;
 }
 
@@ -81,13 +83,13 @@ h2 {
 /* === INTRODUCTION ================================ */
 
 .introSection {
-  background-attachment: fixed; /*makes background stay when scrolling*/
+  background-attachment: fixed;
+  /*makes background stay when scrolling*/
   background-image: url("../images/homepage/introImg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px;
-  margin-bottom: 30px;
 }
 
 .introSection .row {
@@ -95,24 +97,25 @@ h2 {
 }
 
 .introSection .tagline {
-  color:white;
-  font-family:MonotypeCorsiva;
-  font-size:35px;
+  color: white;
+  font-family: MonotypeCorsiva;
+  font-size: 35px;
   line-height: 10px;
-  margin-top:450px;
-  padding-left:650px;
+  margin-top: 450px;
+  padding-left: 650px;
 }
 
 /* === ABOUT SECTION ================================ */
 
 .aboutSection .row {
-  height:500px;
+  height: 500px;
   margin: 0 auto;
   padding: 0;
 }
 
 .aboutSection li {
-  list-style-type: none; /*removes bullet points*/
+  list-style-type: none;
+  /*removes bullet points*/
 }
 
 .aboutPic {
@@ -147,15 +150,21 @@ h2 {
 /* === COMMITTED SECTION ================================ */
 
 .committedSection {
-  background-color: #647441;
-  color: #ffffff;
+  background-color: #EEEDE1;
+  color: #691B1E;
   padding-bottom: 50px;
-  /* background-image: linear-gradient(#FFFFFF, #F5F5DC, #eeeeee); */
-  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.committedSection .committedTo {
+  color: #691b1e;
+  font-family: "MonotypeCorsiva";
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 .fa-clipboard-check, .fa-handshake, .fa-truck, .fa-users {
-  color: #ffffff;
+  color: #691B1E;
   font-size: 60px;
   padding-bottom: 10px;
   padding-top: 20px;
@@ -164,9 +173,9 @@ h2 {
 
 .fa-clipboard-check:hover, .fa-handshake:hover, .fa-truck:hover, .fa-users:hover {
   -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
-  -webkit-mask-size: 200%;
+  -webkit-mask-size: 150%;
   animation: shine 3s infinite;
-  animation-direction: reverse;
+  animation-direction: normal;
 }
 
 @-webkit-keyframes shine {
@@ -183,36 +192,35 @@ h2 {
 .servicesSection {
   background-color: #eeeeee;
   height: 650px;
-  /* padding-top: 50px; */
 }
 
-.servicesSection .innerRow {
-  margin: 0;
-  width: 40px; /*makes width of each service smaller*/
-  /* background-color: #000000; */
+.servicesSection .servicesTagLine {
+  color: #691B1E;
+  font-family: "MonotypeCorsiva";
+  font-size: 25px;
+  margin-bottom: 50px;
 }
 
-.servicesSection .firstService{
+.servicesSection .firstService {
   background-color: #FFFFFF;
-  margin-right: 0;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
-  width: 20px;
+  margin-right: 0px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
-.servicesSection .secondService{
+.servicesSection .secondService {
   background-color: #e8e8e8;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
-.servicesSection .thirdService{
+.servicesSection .thirdService {
   background-color: #FFFFFF;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 .servicesSection .moreButton {
@@ -222,6 +230,7 @@ h2 {
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 50px;
   padding: 15px 25px;
   text-align: center;
   text-transform: uppercase;
@@ -237,8 +246,10 @@ h2 {
 /* === COMPANIES SERVED SECTION ================================ */
 
 .companiesSection {
+  background-color: #FFFFFF;
   height: 700px;
 }
+
 .companiesSection img {
   display: inline-block;
   margin-right: 80px;
@@ -253,11 +264,18 @@ h2 {
 /* === CONTACT US SECTION ================================ */
 
 .contactSection {
-  height: 500px;
+  background-color: #EEEDE1;
+  height: 150px;
 }
 
 .contactSection .contactUs {
+  font-size: 20px;
+  margin-top: 50px;
   text-align: center;
+}
+
+.contactSection .contactUs {
+  color: #647441;
 }
 
 .contactUs a {
@@ -265,12 +283,16 @@ h2 {
   text-decoration: none;
 }
 
+.contactUs a:hover {
+  border-bottom: 5px solid #691B1E;
+}
+
 /* === FOOTER ================================ */
 
 .mainFooter {
-background-image: linear-gradient(#788b4e, #647441);
+  background-image: linear-gradient(#788b4e, #647441);
   color: #ffffff;
-  height: 100px;
+  height: 60px;
 }
 
 /* === MEDIA QUERIES ================================ */
