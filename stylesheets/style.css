@@ -29,8 +29,7 @@ h2 {
   color: #647441;
   font-family: "SackersGothicsStd";
   font-size: 40px;
-  margin-top: 100px;
-  padding-bottom: 10px;
+  margin-top: 60px;
 }
 
 .container {
@@ -113,20 +112,18 @@ h2 {
   padding: 0;
 }
 
+.aboutSection .aboutTagLine {
+  color: #691B1E;
+  font-family: "MonotypeCorsiva";
+  font-size: 20px;
+  line-height: 0;
+  margin-bottom: 50px;
+}
+
 .aboutSection li {
   list-style-type: none;
   /*removes bullet points*/
 }
-
-.aboutPic {
-  /* padding-top: 50px; */
-}
-
-/* .aboutSection .horizontalLine {
-  background-color: #993735;
-  padding-bottom: 3px;
-  width: 20%;
-} */
 
 .aboutSection .learnMoreButton {
   background-color: #647441;
@@ -150,21 +147,23 @@ h2 {
 /* === COMMITTED SECTION ================================ */
 
 .committedSection {
-  background-color: #EEEDE1;
-  color: #691B1E;
+  background-color: #691b1e;
+  color: #ffffff;
   padding-bottom: 50px;
   margin-top: 50px;
 }
 
 .committedSection .committedTo {
-  color: #691b1e;
+  color: #ffffff;
   font-family: "MonotypeCorsiva";
   font-size: 30px;
   margin-top: 20px;
 }
 
 .fa-clipboard-check, .fa-handshake, .fa-truck, .fa-users {
-  color: #691B1E;
+  animation-duration: 3s;
+  animation-name: slidein;
+  color: #ffffff;
   font-size: 60px;
   padding-bottom: 10px;
   padding-top: 20px;
@@ -197,7 +196,8 @@ h2 {
 .servicesSection .servicesTagLine {
   color: #691B1E;
   font-family: "MonotypeCorsiva";
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 0;
   margin-bottom: 50px;
 }
 
@@ -247,7 +247,15 @@ h2 {
 
 .companiesSection {
   background-color: #FFFFFF;
-  height: 700px;
+  height: 650px;
+}
+
+.companiesSection .companiesTagLine {
+  color: #691B1E;
+  font-family: "MonotypeCorsiva";
+  font-size: 20px;
+  line-height: 0;
+  margin-bottom: 50px;
 }
 
 .companiesSection img {
